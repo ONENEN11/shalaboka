@@ -42,12 +42,14 @@ table{
 .div2:hover{
     background: green;
     box-shadow: 0 0 1.5px 3px yellow;
-    scale: 1.1;
     cursor: pointer;
+    rotate: 180deg;
+    scale: 1.1;
 }
 .div2:active{
     background: blue;
     box-shadow: 0 0 1.5px 3px red;
+    rotate: -360deg;
     scale: 1.1;
 }
 @keyframes test{
