@@ -16,40 +16,39 @@ table{
     text-shadow: 1px 1px 3px green;
 }
 .div1{
-    animation: test 3s infinite;
-    border-radius: 25px;
-    height: 100px;
-    transition:.6s linear;
-    width: 100px;
-}
-.div1:hover{
-    box-shadow: 0 0 1.5px 3px yellow;
-    cursor: pointer;
-    scale: 1.1;
-}
-.div1:active{
-    box-shadow: 0 0 1.5px 3px black;
-    scale: 1.1;
-}
-.div2{
     background: red;
     border-radius: 25px;
     height: 50px;
-    margin-top: 400px;
     transition:.6s linear;
     width: 200px;
 }
-.div2:hover{
+.div1:hover{
     background: green;
     box-shadow: 0 0 1.5px 3px yellow;
     cursor: pointer;
     rotate: 180deg;
     scale: 1.1;
 }
-.div2:active{
+.div1:active{
     background: blue;
     box-shadow: 0 0 1.5px 3px red;
     rotate: -360deg;
+    scale: 1.1;
+}
+.div2{
+    animation: test 3s infinite;
+    border-radius: 25px;
+    height: 100px;
+    transition:.6s linear;
+    width: 100px;
+}
+.div2:hover{
+    box-shadow: 0 0 1.5px 3px yellow;
+    cursor: pointer;
+    scale: 1.1;
+}
+.div2:active{
+    box-shadow: 0 0 1.5px 3px black;
     scale: 1.1;
 }
 @keyframes test{
