@@ -1,55 +1,49 @@
-tr{background: white;}
-th,td{
-    border: solid black;
-    height: 30px;
-}
-table{
-    border-spacing: 0;
-    text-shadow: 1px 1px 3px red;
-    width: 200px;
-}
+body{background:fixed no-repeat linear-gradient(135deg,skyblue 50%,transparent);}
 .div0{
-    border-radius: 10px;
-    box-shadow: 0 0 5px 1px blue;
-    font: 1.2em;
-    max-width: 75%;
-    text-shadow: 1px 1px 3px green;
-}
-.div1{
     background: red;
     border-radius: 25px;
     height: 50px;
+    margin: 50px auto;
     transition:.6s linear;
     width: 200px;
 }
-.div1:hover{
+.div0:hover{
     background: green;
     box-shadow: 0 0 1.5px 3px yellow;
     cursor: pointer;
-    rotate: 180deg;
-    scale: 1.1;
 }
-.div1:active{
+.div0:active{
     background: blue;
     box-shadow: 0 0 1.5px 3px red;
-    rotate: -360deg;
-    scale: 1.1;
 }
-.div2{
+.div1{
     animation: test 3s infinite;
-    border-radius: 25px;
+    border-radius: 20px;
     height: 100px;
+    margin: auto;
     transition:.6s linear;
     width: 100px;
 }
-.div2:hover{
+.div1:hover{
     box-shadow: 0 0 1.5px 3px yellow;
     cursor: pointer;
-    scale: 1.1;
 }
-.div2:active{
+.div1:active{
     box-shadow: 0 0 1.5px 3px black;
-    scale: 1.1;
+}
+footer{
+    display: flex;
+    font: large arial;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 450px;
+    text-align: center;
+}
+.item{
+    background: blue;
+    border-radius: 20px;
+    height: 200px;
+    width: 250px;
 }
 @keyframes test{
     0%{
@@ -60,12 +54,12 @@ table{
     33%{
         background: green;
         rotate: 180deg;
-        translate: 300px 300px;
+        translate: 400px 400px;
     }
     66%{
         background: blue;
         rotate: 270deg;
-        translate: -300px 300px;
+        translate: -400px 400px;
     }
     100%{
         background: red;
@@ -73,15 +67,65 @@ table{
         translate: 0 0;
     }
 }
-body{
-    background:fixed no-repeat linear-gradient(135deg,skyblue 50%,transparent);
+@media (max-width:600px){
+    @keyframes test {
+        0%{
+            background: red;
+            rotate: 90deg;
+            translate: 0 0;
+        }
+        33%{
+            background: green;
+            rotate: 180deg;
+            translate: 150px 150px;
+        }
+        66%{
+            background: blue;
+            rotate: 270deg;
+            translate: -150px 150px;
+        }
+        100%{
+            background: red;
+            rotate: 360deg;
+            translate: 0 0;
+        }
+        
+    }
+    footer{
+        flex-flow:column wrap;
+    }
+    .item{
+        width: 100%;
+    }
 }
-::selection{
-    background-color: gold;
-    color: white;
-}
-*{
-    font: 18px arial;
-    text-transform: capitalize;
-    margin: auto;
+@media(min-width:601px) and (max-width:992px){
+    @keyframes test {
+        0%{
+            background: red;
+            rotate: 90deg;
+            translate: 0 0;
+        }
+        33%{
+            background: green;
+            rotate: 180deg;
+            translate: 200px 200px;
+        }
+        66%{
+            background: blue;
+            rotate: 270deg;
+            translate: -200px 200px;
+        }
+        100%{
+            background: red;
+            rotate: 360deg;
+            translate: 0 0;
+        }
+        
+    }
+    footer{
+        flex-flow:wrap;
+    }
+    .item{
+        width: 48%;
+    }
 }
