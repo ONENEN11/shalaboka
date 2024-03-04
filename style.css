@@ -1,31 +1,27 @@
 body{
-    background:fixed no-repeat linear-gradient(135deg,skyblue 50%,transparent);
-    align-items: center;
+    background:fixed no-repeat linear-gradient(135deg,skyblue 75%,transparent);
 }
 header{
-    position: absolute;
     align-items: center;
     display: flex;
     height: 100px;
-    width: 98vw;
 }
 a{
     color: black;
     border-radius: 20px;
-    margin: 20px;
+    margin: 0 10px;
     padding: 10px;
     text-decoration: none;
-    z-index: 1;
 }
 a:hover{
-    background: rgba(0, 0, 0, 0.100);
+    background: rgba(0, 0, 0, 0.300);
+    color: white;
 }
 ul{
     display: flex;
     list-style: none;
     position: absolute;
     right: 20px;
-    z-index: 1;
 }
 section{
     display: none;
@@ -39,78 +35,26 @@ section div{
     height: 3px;
     width: 20px;
 }
-video{
+.container{
+    background: rgba(0, 0, 0, 0.200);
     border-radius: 20px;
-    max-width: 98vw;
+    height: calc(75vh - 20px);
+    margin: 0 10%;
+    padding: 10px;
+    width: 80%;
+    
 }
 footer{
-    display: flex;
-    flex-flow:row wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 450px;
-    text-align: center;
-}
-footer div{
-    background: rgb(0, 0, 100);
-    border-radius: 20px;
-    color: rgb(150, 150, 150);
-    height: 200px;
-    position: relative;
-    width: calc(48vw - 20px);
-}
-footer div:hover{
-    background: blue;
+    background: rgb(65, 65, 65);
+    bottom: 0;
     color: white;
-    cursor: pointer;
-}
-.div0{
-    align-items: center;
-    background: red;
-    border-radius: 25px;
     display: flex;
-    height: 50px;
-    justify-content: center;
-    margin: 50px auto;
-    width: 100px;
+    height: 75px;
+    position: absolute;
+    width: 98%;
 }
-.div0:hover{
-    background: blue;
-    box-shadow: 0 0 1.5px 3px red;
-    cursor: pointer;
-}
-.div1{
-    animation: test 3s infinite;
-    border-radius: 20px;
-    height: 100px;
-    margin: auto;
-    width: 100px;
-}
-.div1:hover{
-    box-shadow: 0 0 1.5px 3px yellow;
-    cursor: pointer;
-}
-@keyframes test{
-    0%{
-        background: red;
-        rotate: 90deg;
-        translate: 0 0;
-    }
-    33%{
-        background: green;
-        rotate: 180deg;
-        translate: 30vw 30vh;
-    }
-    66%{
-        background: blue;
-        rotate: 270deg;
-        translate: -30vw 30vh;
-    }
-    100%{
-        background: red;
-        rotate: 360deg;
-        translate: 0 0;
-    }
+footer h3{
+    margin: 5px 5px;
 }
 @media only screen and (max-width:768px){
     ul{
@@ -119,15 +63,9 @@ footer div:hover{
     section{
         display: flex;
     }
-    footer{
-        flex-flow:column wrap;
-    }
-    footer div{
-        width: 100%;
-    }
 }
 *{
     font: 16px system-ui;
-    transition:.4s linear;
+    transition:.2s linear;
     text-transform: capitalize;
 }
