@@ -1,1 +1,1 @@
-console.log("This is a responsive page designed by Ahmed Salah El-Din, uploaded to Github and still under development. v2.4 : copyright@shalaboka")
+console.log('This is a responsive web page designed by Ahmed Salah El-Din, uploaded to Github and still under development. v2.5 : copyright@shalaboka')

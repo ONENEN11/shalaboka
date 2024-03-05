@@ -48,6 +48,7 @@ section div{
     height: calc(80vh - 50px);
     margin: 0 10%;
     padding: 10px;
+    position: relative;
     width: 80%;
 }
 .container p{
@@ -62,16 +63,17 @@ section div{
 }
 img{
     align-self: center;
-    max-width: calc(100% - 10%);
-    min-width: calc(70% - 10%);
-    position: absolute;
+    max-width: calc(110% - 10%);
+    min-width: calc(60% - 10%);
+    position: relative;
 }
 .div0{
     align-self: center;
     border: 1px solid black;
     border-radius: 30px;
+    bottom: 10px;
     display: inline-flex;
-    margin-top: 50vh;
+    position: absolute;
     width: fit-content;
     z-index: 1;
 }
@@ -89,9 +91,6 @@ footer h3{
     margin: 5px 5px;
 }
 @media only screen and (max-width:768px){
-    img{
-        margin-top: 20vh;
-    }
     .container p{
         font:32px serif;
     }
