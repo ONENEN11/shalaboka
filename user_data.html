@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user_data.css">
+    <title>Login page</title>
+</head>
+<body id="body">
+    <form method="post">
+        <div id="email_div">
+            <label for="user_mail">email</label>
+            <input type="email" id="user_mail" placeholder="enter your email" name="email" required>
+        </div>
+        <div id="pass_div">
+            <label for="user_pass">password</label>
+            <input type="password" id="user_pass" placeholder="enter your password" name="password" minlength="6" required>
+        </div>
+    <button type="submit" id="btn0">login</button>
+    <button type="reset" id="btn1">clear</button>
+    </form>
+    <button id="btn2">back</button>
+    <script src="user_data.js"></script>
+</body>
+</html>

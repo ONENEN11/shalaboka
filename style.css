@@ -1,57 +1,84 @@
-body{
-    background:fixed url(background.jpg) center/contain;
-    overflow: hidden;
-}
+body{background:fixed url(background.jpg) center/contain;}
 header{
     align-items: center;
     display: flex;
     height: 100px;
 }
-a{
+span,a{
     color: black;
     border-radius: 20px;
     margin: 0 10px;
     padding: 10px;
     text-decoration: none;
 }
-a:hover{
+span:hover,a:hover{
     background: rgba(0, 0, 0, 0.300);
     color: white;
+    cursor: pointer;
 }
-ul{
-    display: flex;
-    list-style: none;
-    position: absolute;
-    right: 20px;
-}
-section{
+#nav0{
     background: rgba(0, 0, 0, 0.300);
     border-radius: 10px;
-    display: none;
+    display: flex;
     flex-flow: column wrap;
     gap: 5px;
+    margin-bottom: 50px;
     position: absolute;
     right: 50px;
     padding: 15px;
+    position: fixed;
+    z-index: 3;
 }
-section div{
+#nav0:hover{cursor: pointer;}
+#nav0 div{
     background: white;
     border-radius: 3px;
     height: 5px;
     width: 25px;
 }
+.nav0{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sd0{rotate: 30deg;}
+.sd1{rotate: -30deg;}
+#nav1{
+    background: blue;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+}
+#nav1 div{
+    align-items: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 25vh;
+}
+#nav1 div:hover{
+    background: #fa0;
+    color: white;
+    cursor: pointer;
+}
+.nav1h{right: -100vw;}
+.nav1s{right: 0;}
 .container{
+    align-items: center;
     background: rgba(0, 0, 0, 0.200);
     border-radius: 20px;
     display: flex;
     flex-flow: column wrap;
-    height: calc(80vh - 50px);
+    height: calc(90vh - 75px);
     margin: 0 10%;
     padding: 10px;
     position: relative;
     width: 80%;
 }
 .container p{
+    align-self: flex-start;
     font:40px serif;
     margin-left: 15px;
 }
@@ -62,44 +89,44 @@ section div{
     padding: 10px;
 }
 img{
-    align-self: center;
     max-width: calc(110% - 10%);
     min-width: calc(60% - 10%);
     position: relative;
 }
 .div0{
-    align-self: center;
     border: 1px solid black;
     border-radius: 30px;
     bottom: 10px;
     display: inline-flex;
     position: absolute;
-    width: fit-content;
     z-index: 1;
 }
 footer{
     background: rgb(65, 65, 65);
-    bottom: 0;
+    bottom: -35px;
     color: rgb(190, 190, 190);
     display: flex;
-    height: 50px;
+    height: 35px;
     left: 0;
     position: absolute;
     width: 100%;
 }
-footer h3{
-    margin: 5px 5px;
+footer h3{margin: 5px 5px;}
+#btn1{
+    background: #fa0;
+    border: none;
+    border-radius: 15px;
+    bottom: 0;
+    display: none;
+    height: 30px;
+    position: fixed;
+    right: 0;
+    width: 30px;
 }
+#btn1:hover{cursor: pointer;}
 @media only screen and (max-width:768px){
-    .container p{
-        font:32px serif;
-    }
-    ul{
-        display: none;
-    }
-    section{
-        display: flex;
-    }
+    body{overflow-y: scroll;}
+    .container p{font:32px serif;}
 }
 *{
     font: 16px system-ui;
