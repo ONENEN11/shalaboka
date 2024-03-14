@@ -1,6 +1,6 @@
 console.log('This is a responsive web page designed by Ahmed Salah El-Din,\
 uploaded to Github and still under development.\
-v3.0 : copyright@shalaboka');
+v3.2 : copyright@shalaboka');
 let body = document.getElementsByTagName('body')
 let nav0 = document.getElementById('nav0');
 let nav1 = document.getElementById('nav1');
@@ -22,7 +22,7 @@ nav0.onmouseleave = _ =>{
     sd1.style.background = 'white';
 };
 let login = document.getElementById('login');
-login.onmousedown = _ => location.pathname = 'user_data.html';
+login.onmousedown = _ => location.pathname = 'shalaboka-v3.2/user_data.html';
 let btn0 = document.getElementById('btn0');
 btn0.onmousedown = _ => alert('Soldout');
 let btn1 = document.getElementById('btn1');
