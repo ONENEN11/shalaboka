@@ -1,6 +1,3 @@
-console.log('This is a responsive web page designed by Ahmed Salah El-Din,\
-uploaded to Github and still under development.\
-v3.2 : copyright@shalaboka');
 let body = document.getElementsByTagName('body')
 let nav0 = document.getElementById('nav0');
 let nav1 = document.getElementById('nav1');
